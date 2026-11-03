@@ -1,0 +1,214 @@
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f5f4;
+    color: #344b4a;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+.topo {
+    background: linear-gradient(135deg, #245b58, #36877e);
+    color: white;
+    padding: 32px 20px;
+}
+
+.topo div {
+    max-width: 900px;
+    margin: auto;
+}
+
+.topo h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.topo p {
+    font-size: 15px;
+    color: #d8eeea;
+}
+
+/* Conteúdo */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Painéis */
+.painel {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 22px;
+    border-radius: 14px;
+    border: 1px solid #e3eeeb;
+    box-shadow: 0 4px 14px rgba(36, 91, 88, 0.07);
+}
+
+.painel h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+    color: #285653;
+}
+
+/* Progresso */
+.progresso-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.progresso-info strong {
+    color: #36877e;
+    font-size: 18px;
+}
+
+.barra {
+    width: 100%;
+    height: 12px;
+    background-color: #e1eeeb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.barra-preenchida {
+    width: 0%;
+    height: 100%;
+    background-color: #36877e;
+}
+
+/* Formulário */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #3e605c;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #d3e2de;
+    border-radius: 8px;
+    background-color: #fbfdfc;
+    color: #344b4a;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #36877e;
+}
+
+/* Botão */
+.btn-adicionar {
+    grid-column: 1 / -1;
+    padding: 12px;
+    background-color: #36877e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-adicionar:hover {
+    background-color: #285f59;
+}
+
+/* Atividades */
+.cabecalho-tarefas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.cabecalho-tarefas h2 {
+    margin-bottom: 0;
+}
+
+.cabecalho-tarefas select {
+    max-width: 220px;
+}
+
+.lista-tarefas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.vazio {
+    text-align: center;
+    color: #899d99;
+    padding: 25px 0;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #82918e;
+    font-size: 13px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+
+    .topo {
+        padding: 24px 18px;
+    }
+
+    .topo h1 {
+        font-size: 23px;
+    }
+
+    .container {
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+
+    .painel {
+        padding: 18px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-adicionar {
+        grid-column: auto;
+    }
+
+    .cabecalho-tarefas {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cabecalho-tarefas select {
+        max-width: 100%;
+    }
+}

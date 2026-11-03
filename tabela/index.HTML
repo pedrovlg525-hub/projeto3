@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="topo">
+        <div>
+            <h1>Organizador Inteligente</h1>
+            <p>Organize suas tarefas e acompanhe seu progresso.</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="painel">
+            <h2>Meu progresso</h2>
+
+            <div class="progresso-info">
+                <span>0 de 0 tarefas concluídas</span>
+                <strong>0%</strong>
+            </div>
+
+            <div class="barra">
+                <div class="barra-preenchida"></div>
+            </div>
+        </section>
+
+        <section class="painel">
+            <h2>Nova atividade</h2>
+
+            <form>
+                <div class="campo">
+                    <label for="nome">Nome da atividade</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        placeholder="Ex.: Estudar matemática"
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="data">Data de entrega</label>
+                    <input type="date" id="data">
+                </div>
+
+                <div class="campo">
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria">
+                        <option>Selecione uma categoria</option>
+                        <option>Estudos</option>
+                        <option>Trabalho</option>
+                        <option>Pessoal</option>
+                        <option>Outros</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="prioridade">Prioridade</label>
+                    <select id="prioridade">
+                        <option>Baixa</option>
+                        <option selected>Média</option>
+                        <option>Alta</option>
+                    </select>
+                </div>
+
+                <button type="button" class="btn-adicionar">
+                    + Adicionar atividade
+                </button>
+            </form>
+        </section>
+
+        <section class="painel">
+            <div class="cabecalho-tarefas">
+                <h2>Minhas atividades</h2>
+
+                <select>
+                    <option>Todas as categorias</option>
+                    <option>Estudos</option>
+                    <option>Trabalho</option>
+                    <option>Pessoal</option>
+                    <option>Outros</option>
+                </select>
+            </div>
+
+            <div class="lista-tarefas">
+                <p class="vazio">
+                    Nenhuma atividade cadastrada.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Organizador Inteligente © 2026</p>
+    </footer>
+
+</body>
+</html>
